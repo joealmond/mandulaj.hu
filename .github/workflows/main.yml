@@ -11,7 +11,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
-          server: ftp.secure.domdom.hu
+          server: secure.domdom.hu
           username: mandulaj.hu
           password: ${{ secrets.DOMDOM_FTP_PASSWORD }}
           protocol: ftps
