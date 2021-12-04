@@ -2787,7 +2787,7 @@ input::-moz-focus-inner {
   display: block;
   width: 6.4rem;
   height: 6.4rem;
-  background-color: #cf1767;
+  background-color: #cf1767e0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30%;
@@ -2798,6 +2798,22 @@ input::-moz-focus-inner {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.item-folio__thumb .item-folio__project-source {
+  display: block;
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: #cf1767e0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30%;
+  background-image: url(../images/icons/iconmonstr-github-1w.svg);
+  /* -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0); */
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* item-folio thumb on hover 
