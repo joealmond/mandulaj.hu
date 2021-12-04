@@ -1,360 +1,768 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <title>Mandula József</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Resume - Start Bootstrap Theme</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
   </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">József Mandula</span>
-        <span class="d-none d-lg-block"
-          ><img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="assets/img/MJ_profil_02.jpg"
-            alt=""
-        /></span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+
+  <body id="top">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <!-- <img id="logoCorrection" src="images/MJ_profil_02.png" alt="Homepage"> -->
+        </a>
+      </div>
+
+      <nav class="header-nav-wrap">
+        <ul class="header-main-nav">
+          <li class="current">
+            <a class="smoothscroll" href="#intro" title="intro">Intro</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
+          <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+          <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+          <li>
+            <a class="smoothscroll" href="#contact" title="contact us"
+              >Say Hello</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests"
-              >Interests</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-      <!-- About-->
-      <section class="resume-section" id="about">
-        <div class="resume-section-content">
-          <h1 class="mb-0">
-            József
-            <span class="text-primary">Mandula</span>
+
+        <ul class="header-social">
+          <li>
+            <a href="https://www.facebook.com/jozsef.mandula"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/messages/t/568062394/"
+              ><i class="fab fa-facebook-messenger" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/j%C3%B3zsef-mandula-5947a91b9/"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+    <!-- end s-header -->
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+      <div class="row intro-content">
+        <div class="column large-9 mob-full intro-text">
+          <h3 id="title">Hello, I'm József Mandula</h3>
+          <h1>
+            Now, <br />
+            I am a career changer. <br />
           </h1>
-          <div class="subheading mb-5">
-            Budapest·
-            <a href="mailto:jozsef.mandula@gmail.com"
-              >jozsef.mandula@gmail.com</a
+        </div>
+
+        <div class="intro-scroll">
+          <a href="#about" class="intro-scroll-link smoothscroll">
+            Scroll For More
+          </a>
+        </div>
+
+        <div class="intro-grid"></div>
+        <!-- <div class="intro-pic"></div> -->
+        <video
+          class="intro-pic intro-video"
+          autoplay
+          loop
+          muted
+          src="images/mj_loop.mp4"
+        ></video>
+      </div>
+      <!-- end row -->
+    </section>
+    <!-- end intro -->
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+      <div class="about-me">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">About Me</h2>
+          </div>
+        </div>
+
+        <div class="row about-me__content" data-aos="fade-up">
+          <div class="column large-full about-me__text">
+            <p class="lead">
+              Now, I am a career changer.<br />
+              I am a problem solver.<br />
+              I am technologically minded.<br />
+              I like to immerse myself in mindful design work.<br />
+              I am comfortable working in a team.<br />
+              I'm all about meaningful goals.<br />
+              I am endlessly patient.<br />
+              I am a lifelong learner.<br />
+              I like to learn IT in English.<br />
+              IT things improve under my hands.<br />
+            </p>
+
+            <p>
+              <br />
+              <br />
+
+              I am married, we live happy together with a little daughter in
+              Biatorbágy (Hungary).<br />
+              <br />
+              <br />
+              I have a conversational level of English and Spanish. I am also
+              confortable at writing in English.<br />
+              <br />
+              <br />
+              I have a driver's license and my own car.<br />
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-me__buttons">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              href="mailto:jozsef.mandula@gmail.com"
+              class="btn btn--stroke full-width"
+              >Hire Me</a
             >
           </div>
-          <p class="lead mb-5">
-            * I am experienced in leveraging agile frameworks to provide a
-            robust synopsis for high level overviews. Iterative approaches to
-            corporate strategy foster collaborative thinking to further the
-            overall value proposition.
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              download
+              href="resume/Resume-József-Mandula.pdf"
+              class="btn btn--primary full-width"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end about-me -->
+
+      <div class="about-experience">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">Work & Education</h2>
+          </div>
+        </div>
+
+        <div class="row about-experience__timeline">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <div class="timeline">
+              <div class="timeline__icon-wrap">
+                <span class="timeline__icon timeline__icon--work"></span>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">Nov 2018 – May 2021</p>
+                  <h3 class="item-title">Event & More Kft.</h3>
+                  <h5>Software Engineering Manager</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    Managing the development and operation of various
+                    custom-built event audience registration, seating, booking,
+                    and other systems.<br />
+                    Developing a custom-built live event platform for Cisco
+                    Systems Hungary.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">Oct 2008 – Oct 2020</p>
+                  <h3 class="item-title">Event & More Kft.</h3>
+                  <h5>Technical Director</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    My responsibilities included guaranteeing the technical
+                    success of the events, including any professional and IT
+                    solutions. I have also held the position of technical
+                    manager for events involving more than 10,000 people. In the
+                    course of my work, I developed methods for more efficient
+                    operation and predictability. Challenging tasks have driven
+                    me forward in my career.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2010 – Present</p>
+                  <h3 class="item-title">Entrepreneur</h3>
+                  <h5>Self Employed</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    I maintain my private company to participate in various
+                    projects.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2002 – 2020</p>
+                  <h3 class="item-title">Various Companies</h3>
+                  <h5>Sound Engineer</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    I made recordings, live sound and sound design for theatre
+                    performances, various music bandbands and companies: @
+                    Budapest Puppet Theatre * Tecnosound Canarias SL. * LV Hang
+                    Bt. * Mitsoura band * Bognár Szilvia band * Kolompos band *
+                    etc.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2007 – 2021</p>
+                  <h3 class="item-title">Various Companies</h3>
+                  <h5>Technical Specialist</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    Manageing and designing the sound engineering part of
+                    architectural projects @ Xenoton Kft. * Mikropo Kft. *
+                    Klauzál Gábor Budafok-Tétényi Művelődési Központ | Klauzál
+                    Ház
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <div class="timeline">
+              <div class="timeline__icon-wrap">
+                <span class="timeline__icon timeline__icon--education"></span>
+              </div>
+
+
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2019 – Present</p>
+                  <h3 class="item-title">Bootcamp and Self-education</h3>
+                  <h5>Web development</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    JavaScript, Python, CSS, HTML, Internet & Netwotking...
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2019 – Present</p>
+                  <h3 class="item-title">Oktopus Multimédia Intézet</h3>
+                  <h5>sound engineer (National Training Registry)</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2019 – Present</p>
+                  <h3 class="item-title">Kossuth Lajos Gimnázium</h3>
+                  <h5>graduation</h5>
+                </div>
+                <div class="timeline__desc">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about-experience -->
+    </section>
+    <!-- end s-about -->
+
+    <!-- services
+    ================================================== -->
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading section-heading--centerbottom">
+            Selected Works
+          </h2>
+          <p class="section-desc">
+            Here are some of my selected works I have done lately. Feel free to
+            check them out.
           </p>
-          <div class="social-icons">
-            <a class="social-icon" href="#"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="#"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </div>
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Experience-->
-      <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Experience</h2>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">March 2013 - Present</span>
-            </div>
-          </div>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">July 2010 - December 2011</span>
+      </div>
+      <!-- end heading-block -->
+
+      <div class="masonry-wrap">
+        <div class="masonry">
+          <div class="grid-sizer"></div>
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/portfolio/seating-planr.jpg"
+                  class="thumb-link"
+                  title="Audience seating planner"
+                  data-size="1489x1564"
+                >
+                  <img
+                    src="images/portfolio/seating-planr.jpg"
+                    srcset="
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://joealmond.github.io/seating-planner/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Audience seating planner</h4>
+                <p class="item-folio__cat">Web app, JavaScript</p>
+              </div>
+
+              <div class="item-folio__caption">
+                <p>
+                    Programaticaly generate drawings of SVG objects.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">September 2008 - June 2010</span>
+          <!-- end masonry__brick -->
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/portfolio/backstahe-hompage.jpg"
+                  class="thumb-link"
+                  title="Backstage Kft. Hompage"
+                  data-size="11465x1264"
+                >
+                  <img
+                    src="images/portfolio/backstahe-hompage.jpg"
+                    srcset="
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://joealmond.github.io/backstage2/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Backstage Kft. Hompage</h4>
+                <p class="item-folio__cat">Web Design</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                    Designed in Figma, mad with HTML, CSS, Javascript. Incudes a specila mobile floating menü.
+                </p>
+              </div>
             </div>
           </div>
+          <!-- end masonry__brick -->
+<!-- 
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/portfolio/gallery/g-beetle.jpg"
+                  class="thumb-link"
+                  title="The Beetle Car"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/portfolio/the-beetle.jpg"
+                    srcset="
+                      images/portfolio/the-beetle.jpg    1x,
+                      images/portfolio/the-beetle@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://www.behance.net/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">The Beetle</h4>
+                <p class="item-folio__cat">Web Development</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- end masonry__brick -->
+<!-- 
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/portfolio/gallery/g-shutterbug.jpg"
+                  class="thumb-link"
+                  title="Grow Green"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/portfolio/shutterbug.jpg"
+                    srcset="
+                      images/portfolio/shutterbug.jpg    1x,
+                      images/portfolio/shutterbug@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://www.behance.net/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Shutterbug</h4>
+                <p class="item-folio__cat">Branding</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- end masonry__brick -->
+
+          <!-- <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/portfolio/gallery/g-lamp.jpg"
+                  class="thumb-link"
+                  title="Guitarist"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/portfolio/lamp.jpg"
+                    srcset="
+                      images/portfolio/lamp.jpg    1x,
+                      images/portfolio/lamp@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://www.behance.net/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Lamp</h4>
+                <p class="item-folio__cat">Web Design</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- end masonry__brick -->
+
+          <!-- <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/portfolio/gallery/g-fuji.jpg"
+                  class="thumb-link"
+                  title="Palmeira"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/portfolio/fuji.jpg"
+                    srcset="
+                      images/portfolio/fuji.jpg    1x,
+                      images/portfolio/fuji@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://www.behance.net/"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Fuji</h4>
+                <p class="item-folio__cat">Web Design</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Vero molestiae sed aut natus excepturi. Et tempora numquam.
+                  Temporibus iusto quo.Unde dolorem corrupti neque nisi.
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- end masonry__brick -->
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Education-->
-      <section class="resume-section" id="education">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Education</h2>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">August 2006 - May 2010</span>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">August 2002 - May 2006</span>
-            </div>
-          </div>
+        <!-- end masonry -->
+      </div>
+      <!-- end masonry-wrap -->
+    </section>
+    <!-- end s-work -->
+<!-- testimonies
+    ================================================== -->
+    <section class="s-testimonials">
+    
+        <div class="row testimonials" data-aos="fade-up">
+
+            <div class="column large-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <p>Choose a job you love, and you will never have to work a day in your life.</p>
+                    <div class="testimonials__info">
+                                         <cite class="testimonials__cite">
+                            <strong>Confucius</strong>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+                <div class="testimonials__slide">
+                    <p>In the middle of difficulty lies opportunity.</p>
+                    <div class="testimonials__info">
+                               <cite class="testimonials__cite">
+                            <strong>Albert Einstein</strong>
+
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+
+                <div class="testimonials__slide">
+                    <p>The greatest glory in living lies not in never falling, but in rising every time we fall.</p>
+                    <div class="testimonials__info">
+                                             <cite class="testimonials__cite">
+                            <strong>Nelson Mandela</strong>
+                        </cite>
+                    </div>
+                </div> <!-- end testimonials__slide -->
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials -->
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+      <div class="row heading-block" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading">Get In Touch</h2>
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Skills-->
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">Programming Languages & Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-            <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-            <li class="list-inline-item"><i class="fab fa-react"></i></li>
-            <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-            <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-            <li class="list-inline-item"><i class="fab fa-less"></i></li>
-            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-            <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-            <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-            <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-          </ul>
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              Mobile-First, Responsive Design
-            </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              Cross Browser Testing & Debugging
-            </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              Cross Functional Teams
-            </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-check"></i></span>
-              Agile Development & Scrum
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Interests-->
-      <section class="resume-section" id="interests">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Interests</h2>
-          <p>
-            Apart from being a web developer, I enjoy most of my time being
-            outdoors. In the winter, I am an avid skier and novice ice climber.
-            During the warmer months here in Colorado, I enjoy mountain biking,
-            free climbing, and kayaking.
+      </div>
+
+      <div class="row contact-main" data-aos="fade-up">
+        <div class="column large-full">
+          <p class="contact-email">
+            <a id="shrink" href="mailto:jozsef.mandula@gmail.com"
+              >jozsef.mandula@gmail.com</a
+            >
           </p>
-          <p class="mb-0">
-            When forced indoors, I follow a number of sci-fi and fantasy genre
-            movies and television shows, I am an aspiring chef, and I spend a
-            large amount of my free time exploring the latest technology
-            advancements in the front-end web development world.
+
+          <p class="section-desc">
+            I'm happy to connect, listen and help. Let's work together and build
+            something awesome.
+            <a href="mailto:jozsef.mandula@gmail.com">Email Me</a>.
           </p>
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Awards-->
-      <section class="resume-section" id="awards">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Awards & Certifications</h2>
-          <ul class="fa-ul mb-0">
+      </div>
+
+      <div
+        class="row contact-infos"
+        data-aos="fade-up"
+        data-aos-anchor=".contact-main"
+      >
+        <!-- <div class="column large-5 medium-full contact-phone">
+                <h4>Call Me</h4>
+                <a href="tel:00-36-70-312-3264">+36 seventy 3123264</a>
+            </div> -->
+
+        <div class="column large-7 medium-full contact-social">
+          <h4>Social</h4>
+          <ul>
             <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              Google Analytics Certified Developer
+              <a href="https://www.facebook.com/jozsef.mandula" title="Facebook"
+                >Facebook</a
+              >
             </li>
-            <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              Mobile Web Specialist - Google Certification
-            </li>
-            <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              1
-              <sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2009
-            </li>
-            <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              1
-              <sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008
-              (UI Design Category)
-            </li>
-            <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              2
-              <sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2008
-            </li>
-            <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              1
-              <sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006
-            </li>
-            <li>
-              <span class="fa-li"
-                ><i class="fas fa-trophy text-warning"></i
-              ></span>
-              3
-              <sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005
-            </li>
+            <li><a href="https://www.facebook.com/messages/t/568062394/" title="Facebook Messenger">Messenger</a></li>
+            <li><a href="https://www.linkedin.com/in/j%C3%B3zsef-mandula-5947a91b9/" title="LinkedIn">LinkedIn</a></li>
           </ul>
         </div>
-      </section>
+      </div>
+      <!-- end contact-infos -->
+    </section>
+    <!-- end s-contact -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+      <div class="row">
+        <div class="column large-full ss-copyright">
+          <span>© Copyright Epitome 2019</span>
+          <span
+            >Design by
+            <a href="https://www.styleshout.com/">StyleShout</a></span
+          >
+        </div>
+
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- end photoSwipe background -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
