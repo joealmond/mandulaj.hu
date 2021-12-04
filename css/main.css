@@ -1598,7 +1598,7 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 78px;
-  /* text-align: center; */
+  text-align: center;
   z-index: 100;
 }
 
@@ -1750,7 +1750,6 @@ input::-moz-focus-inner {
   top: 50%;
   left: 9px;
   right: auto;
-  bottom: auto;
 }
 
 .header-menu-toggle span::before,
@@ -2793,8 +2792,8 @@ input::-moz-focus-inner {
   background-position: center center;
   background-size: 30%;
   background-image: url(../images/icons/icon-link.svg);
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0);
+  /* -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0); */
   z-index: 2;
   position: absolute;
   bottom: 0;
