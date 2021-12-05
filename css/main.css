@@ -1919,14 +1919,13 @@ input::-moz-focus-inner {
 
 .intro-pic {
   position: absolute;
-  bottom: 0%;
+  /* bottom: 0; */
   right: 0;
-  bottom: 0;
 }
 .intro-pic.intro-video {
   width: 60vw;
   max-width: 70rem;
-  height: 50vw;
+  height: 50vh;
   min-height: 50rem;
 }
 
@@ -2067,6 +2066,10 @@ input::-moz-focus-inner {
   .intro-pic.intro-video {
     top: 12%;
     left: 40%;
+    width: 60vw;
+    max-width: 70rem;
+    height: 50vw;
+    min-height: 50rem;
   }
 
   .intro-pic::before {
@@ -2354,6 +2357,16 @@ input::-moz-focus-inner {
 }
 
 @media screen and (max-width: 1024px) {
+  .intro-pic {
+    top: 12%;
+    left: 40%;
+  }
+  .intro-pic.intro-video {
+    width: 60vw;
+    max-width: 70rem;
+    height: 50vw;
+    min-height: 50rem;
+  }
   .about-me__text {
     column-gap: 40px;
   }
@@ -2792,8 +2805,6 @@ input::-moz-focus-inner {
   background-position: center center;
   background-size: 30%;
   background-image: url(../images/icons/icon-link.svg);
-  /* -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0); */
   z-index: 2;
   position: absolute;
   bottom: 0;
@@ -2808,8 +2819,6 @@ input::-moz-focus-inner {
   background-position: center center;
   background-size: 30%;
   background-image: url(../images/icons/iconmonstr-github-1w.svg);
-  /* -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100%, 0); */
   z-index: 2;
   position: absolute;
   bottom: 0;
